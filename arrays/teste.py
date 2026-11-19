@@ -23,16 +23,28 @@ def hash_valor():
         final.append(elemento)
     print(final)
 
-def search():
+def search_by_index():
     search_value = int(input("Digite o valor a ser buscado: "))
     if search_value in final:
         print(f"Valor {search_value} encontrado na lista \nValor: {alvo[search_value]}")
     else:
         print(f"Valor {search_value} não encontrado na lista")
 
-print("iniciando alvo selection")
+def search_index_by_name():
+    search_by_name = str(input("Digite o nome do produto: "))
+    if search_by_name in alvo:
+        print(f"Item encontrado no indice {final[0]}")
+    else:
+        print("not found")
+
+'''print("iniciando alvo selection")
 alvo_selection()
 print("iniciando hash valor")
 hash_valor()
 print("iniciando search")
-search()
+search_by_index()
+print("iniciando search por nome")
+search_index_by_name()'''
+alvo_selection()
+hash_valor()
+search_index_by_name()
