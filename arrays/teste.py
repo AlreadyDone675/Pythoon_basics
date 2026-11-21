@@ -33,7 +33,7 @@ def search_by_index():
 def search_index_by_name():
     search_by_name = str(input("Digite o nome do produto: "))
     if search_by_name in alvo:
-        print(f"Item encontrado no indice {final[0]}")
+        print(f"Item {search_by_name} encontrado no indice {final[0]}")
     else:
         print("not found")
 
