@@ -3,6 +3,9 @@ from rich.console import Console, OverflowMethod
 from time import sleep as s
 from typing import List
 from rich.theme import Theme
+import sys
+
+
 custom_theme = Theme({
     "fuel": "white"
 })
